@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="1548,13740" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System.Text.RegularExpressions" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="1548,14345" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System.Text.RegularExpressions" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -134,7 +134,7 @@
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1558,13675" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1558,14280" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
       <Variable x:TypeArguments="x:Int32" Name="index" />
@@ -144,13 +144,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Plataforma A :: Plataforma A" sap:VirtualizedContainerService.HintSize="1496,13587" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="ea771a46-45bb-40c8-b745-5819a31b42a8" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Plataforma A :: Plataforma A" sap:VirtualizedContainerService.HintSize="1496,14192" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="ea771a46-45bb-40c8-b745-5819a31b42a8" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1462,13347" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1462,13952" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="str_idx" />
             </Sequence.Variables>
@@ -322,19 +322,19 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </Assign>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[index]" DataTable="[ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1400,12244" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[index]" DataTable="[ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1400,12849" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Row" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1366,12055" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1366,12660" sap2010:WorkflowViewState.IdRef="Sequence_9">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <If Condition="[Row(0).ToString.Contains(&quot;8/8&quot;)]" sap:VirtualizedContainerService.HintSize="1304,11970" sap2010:WorkflowViewState.IdRef="If_1">
+                    <If Condition="[Row(0).ToString.Contains(&quot;8/8&quot;)]" sap:VirtualizedContainerService.HintSize="1304,12575" sap2010:WorkflowViewState.IdRef="If_1">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -360,20 +360,20 @@
                         </Sequence>
                       </If.Then>
                       <If.Else>
-                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="1270,11619" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="1270,12224" sap2010:WorkflowViewState.IdRef="Sequence_13">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Plataforma A :: Plataforma A" sap:VirtualizedContainerService.HintSize="1208,11534" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="25592343-510a-496d-b086-77b1fb4af485" Version="V2">
+                          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Plataforma A :: Plataforma A" sap:VirtualizedContainerService.HintSize="1208,12139" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="25592343-510a-496d-b086-77b1fb4af485" Version="V2">
                             <uix:NApplicationCard.Body>
                               <ActivityAction x:TypeArguments="x:Object">
                                 <ActivityAction.Argument>
                                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                 </ActivityAction.Argument>
-                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1174,11294" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1174,11899" sap2010:WorkflowViewState.IdRef="Sequence_2">
                                   <Sequence.Variables>
                                     <Variable x:TypeArguments="x:String" Name="str_desafio" />
                                     <Variable x:TypeArguments="x:String" Name="str_DesafioRespotas" />
@@ -395,31 +395,31 @@
                                       <InArgument x:TypeArguments="x:String">[if(index=0,str_idx,(CInt(str_idx)+1).tostring)]</InArgument>
                                     </Assign.Value>
                                   </Assign>
-                                  <Assign sap:VirtualizedContainerService.HintSize="1112,114" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                  <Assign sap:VirtualizedContainerService.HintSize="1112,114" sap2010:WorkflowViewState.IdRef="Assign_13">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:String">[aula]</OutArgument>
                                     </Assign.To>
                                     <Assign.Value>
-                                      <InArgument x:TypeArguments="x:String">[Row(0).ToString.Substring(0,Row(0).ToString.IndexOf("0,0%"))]</InArgument>
+                                      <InArgument x:TypeArguments="x:String">[Row(0).ToString.Substring(0,Row(0).ToString.IndexOf("%"))]</InArgument>
                                     </Assign.Value>
                                   </Assign>
-                                  <Assign sap:VirtualizedContainerService.HintSize="1112,114" sap2010:WorkflowViewState.IdRef="Assign_12">
+                                  <Assign sap:VirtualizedContainerService.HintSize="1112,114" sap2010:WorkflowViewState.IdRef="Assign_14">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:String">[aula]</OutArgument>
                                     </Assign.To>
                                     <Assign.Value>
-                                      <InArgument x:TypeArguments="x:String">[aula.Remove(aula.Length-1)]</InArgument>
+                                      <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(aula, "\d+,\d+","").Trim()]</InArgument>
                                     </Assign.Value>
                                   </Assign>
-                                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1112,57" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1112,341" sap2010:WorkflowViewState.IdRef="CommentOut_2">
                                     <ui:CommentOut.Body>
-                                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,191" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,190" sap2010:WorkflowViewState.IdRef="Sequence_20">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <Assign sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Assign_10">
+                                        <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_10">
                                           <Assign.To>
                                             <OutArgument x:TypeArguments="scg:List(x:String)">[lista]</OutArgument>
                                           </Assign.To>
@@ -431,20 +431,20 @@
                                     </ui:CommentOut.Body>
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                   </ui:CommentOut>
-                                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1112,57" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+                                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1112,57" sap2010:WorkflowViewState.IdRef="CommentOut_15">
                                     <ui:CommentOut.Body>
-                                      <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="Sequence_33">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ui:Matches FirstMatch="{x:Null}" BuilderPattern="\b[a-zA-Záéíóúâêîôûàèìòùãõç -]+\b" DisplayName="Find Matching Patterns" sap:VirtualizedContainerService.HintSize="354,83" sap2010:WorkflowViewState.IdRef="Matches_2" Input="[aula]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;\\b[a-zA-Záéíóúâêîôûàèìòùãõç -]+\\b&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="\b[a-zA-Záéíóúâêîôûàèìòùãõç -]+\b" RegexOption="IgnoreCase, Compiled" Result="[regex]" />
+                                        <ui:Matches FirstMatch="{x:Null}" BuilderPattern="\b[a-zA-Záéíóúâêîôûàèìòùãõç - (]+\b+[)]" DisplayName="Find Matching Patterns" sap:VirtualizedContainerService.HintSize="354,83" sap2010:WorkflowViewState.IdRef="Matches_3" Input="[aula]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;\\b[a-zA-Záéíóúâêîôûàèìòùãõç - (]+\\b+[)]&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="\b[a-zA-Záéíóúâêîôûàèìòùãõç - (]+\b+[)]" RegexOption="IgnoreCase, Compiled" Result="[regex]" />
                                       </Sequence>
                                     </ui:CommentOut.Body>
                                     <sap:WorkflowViewStateService.ViewState>
@@ -579,7 +579,7 @@
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                   </ui:CommentOut>
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Desafio'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" ScopeIdentifier="25592343-510a-496d-b086-77b1fb4af485" Version="V3">
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Desafio'" sap:VirtualizedContainerService.HintSize="1112,189" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" ScopeIdentifier="25592343-510a-496d-b086-77b1fb4af485" Version="V3">
                                     <uix:NClick.MouseButton>
                                       <InArgument x:TypeArguments="uix:NMouseButton">
                                         <Literal x:TypeArguments="uix:NMouseButton" sap2010:WorkflowViewState.IdRef="Literal`1_1" />
@@ -589,45 +589,107 @@
                                       <uix:TargetAnchorable BrowserURL="https://univali.grupoa.education/plataforma/course/736696/content/6780877" CvTextArea="63, 372, 49, 13" CvTextArgument="Desafio" CvType="Text" DesignTimeRectangle="8, 341, 319, 80" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl aria-role='listitem' idx='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='listitem' type='' tag='DIV' class='pl-6 pr-5 list-item-topic v-list-item v-list-item--link theme--light' aaname='   ' check:innerText='Desafio' /&gt;" Guid="32924522-3e52-4799-bbf2-766496d7e200" InformativeScreenshot="cb64898e2c75bb60bed5d340c469ddaa.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plataforma A :: Plataforma A' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
                                     </uix:NClick.Target>
                                   </uix:NClick>
-                                  <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Up" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="1112,169" sap2010:WorkflowViewState.IdRef="NMouseScroll_24" InteractionMode="DebuggerApi" MovementUnits="5" Version="V3" />
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Marcar como concluído'" sap:VirtualizedContainerService.HintSize="1112,189" sap2010:WorkflowViewState.IdRef="NClick_39" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="25592343-510a-496d-b086-77b1fb4af485" Version="V3">
-                                    <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="https://univali.grupoa.education/plataforma/course/736729/content/13659864" CvElementArea="1015, 734, 218, 57" CvTextArea="1064, 756, 148, 13" CvTextArgument="Marcar como concluido" CvType="Button" DesignTimeRectangle="1014, 734, 218, 57" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='                   Marcar como concluído                 ' parentid='13659894' tag='SPAN' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl aaname='                   Marcar como concluído                 ' parentid='*' tag='SPAN' type='' class='' check:innerText='Marcar como concluído' /&gt;" Guid="55ef8f42-ac17-4ea2-a1ce-836c555f946f" InformativeScreenshot="419b62313fd39de620fb343eefa13a05.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plataforma A :: Plataforma A' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
-                                    </uix:NClick.Target>
-                                  </uix:NClick>
+                                  <uix:NMouseScroll KeyModifiers="{x:Null}" DelayAfter="4" Direction="Up" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="1112,169" sap2010:WorkflowViewState.IdRef="NMouseScroll_24" InteractionMode="DebuggerApi" MovementUnits="3" Version="V3" />
+                                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1112,57" sap2010:WorkflowViewState.IdRef="CommentOut_7">
+                                    <ui:CommentOut.Body>
+                                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,265" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Marcar como concluído'" sap:VirtualizedContainerService.HintSize="354,180" sap2010:WorkflowViewState.IdRef="NClick_39" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="25592343-510a-496d-b086-77b1fb4af485" Version="V3">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://univali.grupoa.education/plataforma/course/736729/content/13659864" CvElementArea="1015, 734, 218, 57" CvTextArea="1064, 756, 148, 13" CvTextArgument="Marcar como concluido" CvType="Button" DesignTimeRectangle="1014, 734, 218, 57" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='                   Marcar como concluído                 ' parentid='13659894' tag='SPAN' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl aaname='                   Marcar como concluído                 ' parentid='*' tag='SPAN' type='' class='' check:innerText='Marcar como concluído' /&gt;" Guid="55ef8f42-ac17-4ea2-a1ce-836c555f946f" InformativeScreenshot="419b62313fd39de620fb343eefa13a05.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plataforma A :: Plataforma A' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                          </uix:NClick.Target>
+                                        </uix:NClick>
+                                      </Sequence>
+                                    </ui:CommentOut.Body>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:CommentOut>
                                   <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="3" DisplayName="Click 'Conteúdo do Livro'" sap:VirtualizedContainerService.HintSize="1112,189" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="25592343-510a-496d-b086-77b1fb4af485" Version="V3">
                                     <uix:NClick.Target>
                                       <uix:TargetAnchorable BrowserURL="https://univali.grupoa.education/plataforma/course/736696/content/6780881" CvTextArea="63, 542, 116, 13" CvTextArgument="Conteudo do Livro" CvType="Text" DesignTimeRectangle="8, 511, 319, 80" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl aria-role='listitem' idx='4' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='listitem' type='' tag='DIV' class='pl-6 pr-5 list-item-topic v-list-item v-list-item--link theme--light' aaname='   ' check:innerText='Conteúdo do Livro' /&gt;" Guid="8003f143-cddc-490a-a5db-5cb0b001e5e7" InformativeScreenshot="d9717f5a96f42810a6c3d93ec294b786.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plataforma A :: Plataforma A' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
                                     </uix:NClick.Target>
                                   </uix:NClick>
-                                  <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Up" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="1112,169" sap2010:WorkflowViewState.IdRef="NMouseScroll_23" InteractionMode="HardwareEvents" MovementUnits="5" Version="V3" />
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Marcar como concluído'" sap:VirtualizedContainerService.HintSize="1112,189" sap2010:WorkflowViewState.IdRef="NClick_40" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="25592343-510a-496d-b086-77b1fb4af485" Version="V3">
-                                    <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="https://univali.grupoa.education/plataforma/course/736729/content/13659864" CvElementArea="1015, 734, 218, 57" CvTextArea="1064, 756, 148, 13" CvTextArgument="Marcar como concluido" CvType="Button" DesignTimeRectangle="1014, 734, 218, 57" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='                   Marcar como concluído                 ' parentid='13659894' tag='SPAN' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl aaname='                   Marcar como concluído                 ' parentid='*' tag='SPAN' type='' class='' check:innerText='Marcar como concluído' /&gt;" Guid="55ef8f42-ac17-4ea2-a1ce-836c555f946f" InformativeScreenshot="419b62313fd39de620fb343eefa13a05.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plataforma A :: Plataforma A' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
-                                    </uix:NClick.Target>
-                                  </uix:NClick>
+                                  <uix:NMouseScroll KeyModifiers="{x:Null}" DelayAfter="4" Direction="Up" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="1112,169" sap2010:WorkflowViewState.IdRef="NMouseScroll_23" InteractionMode="HardwareEvents" MovementUnits="3" Version="V3" />
+                                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1112,57" sap2010:WorkflowViewState.IdRef="CommentOut_8">
+                                    <ui:CommentOut.Body>
+                                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,265" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Marcar como concluído'" sap:VirtualizedContainerService.HintSize="354,180" sap2010:WorkflowViewState.IdRef="NClick_40" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="25592343-510a-496d-b086-77b1fb4af485" Version="V3">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://univali.grupoa.education/plataforma/course/736729/content/13659864" CvElementArea="1015, 734, 218, 57" CvTextArea="1064, 756, 148, 13" CvTextArgument="Marcar como concluido" CvType="Button" DesignTimeRectangle="1014, 734, 218, 57" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='                   Marcar como concluído                 ' parentid='13659894' tag='SPAN' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl aaname='                   Marcar como concluído                 ' parentid='*' tag='SPAN' type='' class='' check:innerText='Marcar como concluído' /&gt;" Guid="55ef8f42-ac17-4ea2-a1ce-836c555f946f" InformativeScreenshot="419b62313fd39de620fb343eefa13a05.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plataforma A :: Plataforma A' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                          </uix:NClick.Target>
+                                        </uix:NClick>
+                                      </Sequence>
+                                    </ui:CommentOut.Body>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:CommentOut>
                                   <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="3" DisplayName="Click 'Conteúdo do Livro'" sap:VirtualizedContainerService.HintSize="1112,189" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="25592343-510a-496d-b086-77b1fb4af485" Version="V3">
                                     <uix:NClick.Target>
                                       <uix:TargetAnchorable BrowserURL="https://univali.grupoa.education/plataforma/course/736696/content/6780882" CvTextArea="63, 622, 112, 13" CvTextArgument="Dica do Professor" CvType="Text" DesignTimeRectangle="8, 591, 319, 80" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl aria-role='listitem' idx='5' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='listitem' type='' tag='DIV' class='pl-6 pr-5 list-item-topic v-list-item v-list-item--link theme--light' aaname='   ' check:innerText='Dica do Professor' /&gt;" Guid="463e2374-6722-482d-9373-428f072194c5" InformativeScreenshot="20a47cc9196aa7b2e95dde23932e9d29.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plataforma A :: Plataforma A' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
                                     </uix:NClick.Target>
                                   </uix:NClick>
-                                  <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Up" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="1112,169" sap2010:WorkflowViewState.IdRef="NMouseScroll_22" InteractionMode="HardwareEvents" MovementUnits="5" Version="V3" />
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Marcar como concluído'" sap:VirtualizedContainerService.HintSize="1112,189" sap2010:WorkflowViewState.IdRef="NClick_38" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="25592343-510a-496d-b086-77b1fb4af485" Version="V3">
-                                    <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="https://univali.grupoa.education/plataforma/course/736729/content/13659864" CvElementArea="1015, 734, 218, 57" CvTextArea="1064, 756, 148, 13" CvTextArgument="Marcar como concluido" CvType="Button" DesignTimeRectangle="1014, 734, 218, 57" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='                   Marcar como concluído                 ' parentid='13659894' tag='SPAN' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl aaname='                   Marcar como concluído                 ' parentid='*' tag='SPAN' type='' class='' check:innerText='Marcar como concluído' /&gt;" Guid="55ef8f42-ac17-4ea2-a1ce-836c555f946f" InformativeScreenshot="419b62313fd39de620fb343eefa13a05.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plataforma A :: Plataforma A' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
-                                    </uix:NClick.Target>
-                                  </uix:NClick>
+                                  <uix:NMouseScroll KeyModifiers="{x:Null}" DelayAfter="4" Direction="Up" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="1112,169" sap2010:WorkflowViewState.IdRef="NMouseScroll_22" InteractionMode="HardwareEvents" MovementUnits="3" Version="V3" />
+                                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1112,57" sap2010:WorkflowViewState.IdRef="CommentOut_9">
+                                    <ui:CommentOut.Body>
+                                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,265" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Marcar como concluído'" sap:VirtualizedContainerService.HintSize="354,180" sap2010:WorkflowViewState.IdRef="NClick_38" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="25592343-510a-496d-b086-77b1fb4af485" Version="V3">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://univali.grupoa.education/plataforma/course/736729/content/13659864" CvElementArea="1015, 734, 218, 57" CvTextArea="1064, 756, 148, 13" CvTextArgument="Marcar como concluido" CvType="Button" DesignTimeRectangle="1014, 734, 218, 57" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='                   Marcar como concluído                 ' parentid='13659894' tag='SPAN' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl aaname='                   Marcar como concluído                 ' parentid='*' tag='SPAN' type='' class='' check:innerText='Marcar como concluído' /&gt;" Guid="55ef8f42-ac17-4ea2-a1ce-836c555f946f" InformativeScreenshot="419b62313fd39de620fb343eefa13a05.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plataforma A :: Plataforma A' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                          </uix:NClick.Target>
+                                        </uix:NClick>
+                                      </Sequence>
+                                    </ui:CommentOut.Body>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:CommentOut>
                                   <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="3" DisplayName="Click 'Exercícios'" sap:VirtualizedContainerService.HintSize="1112,189" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="25592343-510a-496d-b086-77b1fb4af485" Version="V3">
                                     <uix:NClick.Target>
                                       <uix:TargetAnchorable BrowserURL="https://univali.grupoa.education/plataforma/course/736696/content/6780881" CvTextArea="63, 701, 63, 14" CvTextArgument="Exercicios" CvType="Text" DesignTimeRectangle="8, 671, 319, 80" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl aria-role='listitem' idx='6' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='listitem' type='' tag='DIV' class='pl-6 pr-5 list-item-topic v-list-item v-list-item--link theme--light' aaname='   ' check:innerText='Exercícios' /&gt;" Guid="42497c9f-931f-46c2-a3e4-c50a57f5a9d9" InformativeScreenshot="525e6165e97baea2b68757c6d759bc98.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plataforma A :: Plataforma A' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
                                     </uix:NClick.Target>
                                   </uix:NClick>
-                                  <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Up" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="1112,169" sap2010:WorkflowViewState.IdRef="NMouseScroll_21" InteractionMode="HardwareEvents" MovementUnits="5" Version="V3" />
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Marcar como concluído'" sap:VirtualizedContainerService.HintSize="1112,189" sap2010:WorkflowViewState.IdRef="NClick_41" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="25592343-510a-496d-b086-77b1fb4af485" Version="V3">
-                                    <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="https://univali.grupoa.education/plataforma/course/736729/content/13659864" CvElementArea="1015, 734, 218, 57" CvTextArea="1064, 756, 148, 13" CvTextArgument="Marcar como concluido" CvType="Button" DesignTimeRectangle="1014, 734, 218, 57" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='                   Marcar como concluído                 ' parentid='13659894' tag='SPAN' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl aaname='                   Marcar como concluído                 ' parentid='*' tag='SPAN' type='' class='' check:innerText='Marcar como concluído' /&gt;" Guid="55ef8f42-ac17-4ea2-a1ce-836c555f946f" InformativeScreenshot="419b62313fd39de620fb343eefa13a05.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plataforma A :: Plataforma A' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
-                                    </uix:NClick.Target>
-                                  </uix:NClick>
+                                  <uix:NMouseScroll KeyModifiers="{x:Null}" DelayAfter="4" Direction="Up" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="1112,169" sap2010:WorkflowViewState.IdRef="NMouseScroll_21" InteractionMode="HardwareEvents" MovementUnits="3" Version="V3" />
+                                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1112,376" sap2010:WorkflowViewState.IdRef="CommentOut_10">
+                                    <ui:CommentOut.Body>
+                                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,265" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Marcar como concluído'" sap:VirtualizedContainerService.HintSize="354,180" sap2010:WorkflowViewState.IdRef="NClick_41" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="25592343-510a-496d-b086-77b1fb4af485" Version="V3">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://univali.grupoa.education/plataforma/course/736729/content/13659864" CvElementArea="1015, 734, 218, 57" CvTextArea="1064, 756, 148, 13" CvTextArgument="Marcar como concluido" CvType="Button" DesignTimeRectangle="1014, 734, 218, 57" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='                   Marcar como concluído                 ' parentid='13659894' tag='SPAN' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl aaname='                   Marcar como concluído                 ' parentid='*' tag='SPAN' type='' class='' check:innerText='Marcar como concluído' /&gt;" Guid="55ef8f42-ac17-4ea2-a1ce-836c555f946f" InformativeScreenshot="419b62313fd39de620fb343eefa13a05.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plataforma A :: Plataforma A' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                          </uix:NClick.Target>
+                                        </uix:NClick>
+                                      </Sequence>
+                                    </ui:CommentOut.Body>
+                                  </ui:CommentOut>
                                   <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="3" DisplayName="Click 'Na pratica'" sap:VirtualizedContainerService.HintSize="1112,189" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="25592343-510a-496d-b086-77b1fb4af485" Version="V3">
                                     <uix:NClick.Target>
                                       <uix:TargetAnchorable BrowserURL="https://univali.grupoa.education/plataforma/course/736696/content/6780882" CvTextArea="63, 782, 65, 15" CvTextArgument="Na pratica" CvType="Text" DesignTimeRectangle="8, 751, 319, 80" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl aria-role='listitem' idx='7' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='listitem' type='' tag='DIV' class='pl-6 pr-5 list-item-topic v-list-item v-list-item--link theme--light' aaname='   ' check:innerText='Na prática' /&gt;" Guid="5c4383e9-20fd-48dc-9bc0-abb0d6c39d59" InformativeScreenshot="8fd72e01b55d2f81ce04d08e53cad164.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plataforma A :: Plataforma A' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
@@ -760,18 +822,40 @@
                                       <uix:TargetAnchorable BrowserURL="https://univali.grupoa.education/plataforma/course/736696/content/6780881" CvTextArea="62, 861, 67, 14" CvTextArgument="Saiba mais" CvType="Text" DesignTimeRectangle="8, 831, 319, 80" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl aria-role='listitem' idx='8' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='listitem' type='' tag='DIV' class='pl-6 pr-5 list-item-topic v-list-item v-list-item--link theme--light' aaname='   ' check:innerText='Saiba mais' /&gt;" Guid="01496331-2437-48ed-879d-f8ed01437745" InformativeScreenshot="5487ddce1fecda1ce469a22007c0f608.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plataforma A :: Plataforma A' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
                                     </uix:NClick.Target>
                                   </uix:NClick>
-                                  <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Up" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="1112,169" sap2010:WorkflowViewState.IdRef="NMouseScroll_17" InteractionMode="HardwareEvents" MovementUnits="5" Version="V3" />
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Marcar como concluído'" sap:VirtualizedContainerService.HintSize="1112,189" sap2010:WorkflowViewState.IdRef="NClick_35" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="25592343-510a-496d-b086-77b1fb4af485" Version="V3">
-                                    <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="https://univali.grupoa.education/plataforma/course/736729/content/13659864" CvElementArea="1015, 734, 218, 57" CvTextArea="1064, 756, 148, 13" CvTextArgument="Marcar como concluido" CvType="Button" DesignTimeRectangle="1014, 734, 218, 57" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='                   Marcar como concluído                 ' parentid='13659894' tag='SPAN' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl aaname='                   Marcar como concluído                 ' parentid='*' tag='SPAN' type='' class='' check:innerText='Marcar como concluído' /&gt;" Guid="55ef8f42-ac17-4ea2-a1ce-836c555f946f" InformativeScreenshot="419b62313fd39de620fb343eefa13a05.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plataforma A :: Plataforma A' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
-                                    </uix:NClick.Target>
-                                  </uix:NClick>
-                                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="3" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="1112,211" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(end)][u(hk)]" Version="V3" />
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Marcar como concluído'" sap:VirtualizedContainerService.HintSize="1112,189" sap2010:WorkflowViewState.IdRef="NClick_34" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="25592343-510a-496d-b086-77b1fb4af485" Version="V3">
-                                    <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="https://univali.grupoa.education/plataforma/course/736729/content/13659864" CvElementArea="1015, 734, 218, 57" CvTextArea="1064, 756, 148, 13" CvTextArgument="Marcar como concluido" CvType="Button" DesignTimeRectangle="1014, 734, 218, 57" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='                   Marcar como concluído                 ' parentid='13659894' tag='SPAN' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl aaname='                   Marcar como concluído                 ' parentid='*' tag='SPAN' type='' class='' check:innerText='Marcar como concluído' /&gt;" Guid="55ef8f42-ac17-4ea2-a1ce-836c555f946f" InformativeScreenshot="419b62313fd39de620fb343eefa13a05.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plataforma A :: Plataforma A' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
-                                    </uix:NClick.Target>
-                                  </uix:NClick>
+                                  <uix:NMouseScroll KeyModifiers="{x:Null}" DelayBefore="4" Direction="Up" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="1112,169" sap2010:WorkflowViewState.IdRef="NMouseScroll_17" InteractionMode="HardwareEvents" MovementUnits="3" Version="V3" />
+                                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1112,376" sap2010:WorkflowViewState.IdRef="CommentOut_11">
+                                    <ui:CommentOut.Body>
+                                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,265" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Marcar como concluído'" sap:VirtualizedContainerService.HintSize="354,180" sap2010:WorkflowViewState.IdRef="NClick_35" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="25592343-510a-496d-b086-77b1fb4af485" Version="V3">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://univali.grupoa.education/plataforma/course/736729/content/13659864" CvElementArea="1015, 734, 218, 57" CvTextArea="1064, 756, 148, 13" CvTextArgument="Marcar como concluido" CvType="Button" DesignTimeRectangle="1014, 734, 218, 57" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='                   Marcar como concluído                 ' parentid='13659894' tag='SPAN' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl aaname='                   Marcar como concluído                 ' parentid='*' tag='SPAN' type='' class='' check:innerText='Marcar como concluído' /&gt;" Guid="55ef8f42-ac17-4ea2-a1ce-836c555f946f" InformativeScreenshot="419b62313fd39de620fb343eefa13a05.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plataforma A :: Plataforma A' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                          </uix:NClick.Target>
+                                        </uix:NClick>
+                                      </Sequence>
+                                    </ui:CommentOut.Body>
+                                  </ui:CommentOut>
+                                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="4" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="1112,211" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(end)][u(hk)]" Version="V3" />
+                                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1112,376" sap2010:WorkflowViewState.IdRef="CommentOut_12">
+                                    <ui:CommentOut.Body>
+                                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,265" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Marcar como concluído'" sap:VirtualizedContainerService.HintSize="354,180" sap2010:WorkflowViewState.IdRef="NClick_34" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="25592343-510a-496d-b086-77b1fb4af485" Version="V3">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://univali.grupoa.education/plataforma/course/736729/content/13659864" CvElementArea="1015, 734, 218, 57" CvTextArea="1064, 756, 148, 13" CvTextArgument="Marcar como concluido" CvType="Button" DesignTimeRectangle="1014, 734, 218, 57" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='                   Marcar como concluído                 ' parentid='13659894' tag='SPAN' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl aaname='                   Marcar como concluído                 ' parentid='*' tag='SPAN' type='' class='' check:innerText='Marcar como concluído' /&gt;" Guid="55ef8f42-ac17-4ea2-a1ce-836c555f946f" InformativeScreenshot="419b62313fd39de620fb343eefa13a05.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plataforma A :: Plataforma A' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                          </uix:NClick.Target>
+                                        </uix:NClick>
+                                      </Sequence>
+                                    </ui:CommentOut.Body>
+                                  </ui:CommentOut>
                                   <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="3" DisplayName="Click 'Desafio'" sap:VirtualizedContainerService.HintSize="1112,189" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="25592343-510a-496d-b086-77b1fb4af485" Version="V3">
                                     <uix:NClick.Target>
                                       <uix:TargetAnchorable BrowserURL="https://univali.grupoa.education/plataforma/course/736696/content/6780881" CvTextArea="63, 382, 49, 13" CvTextArgument="Desafo" CvType="Text" DesignTimeRectangle="8, 351, 319, 80" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl aria-role='listitem' idx='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='listitem' type='' tag='DIV' class='pl-6 pr-5 list-item-topic v-list-item v-list-item--link theme--light' aaname='   ' check:innerText='Desafio' /&gt;" Guid="c853e96b-0ebf-4dda-afda-ed8415932c9c" InformativeScreenshot="d3f043d4c88709de59809946e85e36be.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plataforma A :: Plataforma A' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
@@ -781,14 +865,14 @@
                                     <uix:NGetAttributeGeneric.Target>
                                       <uix:TargetAnchorable BrowserURL="https://univali.grupoa.education/plataforma/course/736729/content/13659867" DesignTimeRectangle="384, 529, 924, 1374" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl class='maisa-container' parentid='13659912' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='maisa-container' parentid='*' tag='DIV' type='' aaname='     ' /&gt;" Guid="16af8edb-5ece-45a0-95fd-9ab310dbc3d0" ImageBase64="" InformativeScreenshot="ceff32bc6b460f4ac13171c5a4876fe4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plataforma A :: Plataforma A' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
                                         <uix:TargetAnchorable.Anchors>
-                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                             <uix:Target CvTextArea="791, 538, 111, 28" CvTextArgument="Desafo" CvType="Text" DesignTimeRectangle="791, 529, 110, 48" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='13659912' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='13659912' tag='H2' type='' class='text-title pt-1' aaname='           Desafio         ' check:innerText='Desafio' /&gt;" SearchSteps="FuzzySelector, CV" />
                                           </scg:List>
                                         </uix:TargetAnchorable.Anchors>
                                       </uix:TargetAnchorable>
                                     </uix:NGetAttributeGeneric.Target>
                                   </uix:NGetAttributeGeneric>
-                                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1112,426" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1112,57" sap2010:WorkflowViewState.IdRef="CommentOut_4">
                                     <ui:CommentOut.Body>
                                       <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="416,315" sap2010:WorkflowViewState.IdRef="Sequence_22">
                                         <sap:WorkflowViewStateService.ViewState>
@@ -809,15 +893,21 @@
                                         </uix:NGetAttributeGeneric>
                                       </Sequence>
                                     </ui:CommentOut.Body>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
                                   </ui:CommentOut>
                                   <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="1112,92" sap2010:WorkflowViewState.IdRef="SetToClipboard_2" Text="[str_desafio.Replace(&quot;Desafio&quot;,&quot;&quot;)]" />
-                                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: ChatGPT" sap:VirtualizedContainerService.HintSize="1112,1410" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="1e8b10d0-983a-406f-8d54-94c220fb71f9" Version="V2">
+                                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: ChatGPT" sap:VirtualizedContainerService.HintSize="1112,1832" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" IsIncognito="True" ScopeGuid="1e8b10d0-983a-406f-8d54-94c220fb71f9" Version="V2">
                                     <uix:NApplicationCard.Body>
                                       <ActivityAction x:TypeArguments="x:Object">
                                         <ActivityAction.Argument>
                                           <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                         </ActivityAction.Argument>
-                                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,1161" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,1583" sap2010:WorkflowViewState.IdRef="Sequence_3">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -825,43 +915,38 @@
                                           </sap:WorkflowViewStateService.ViewState>
                                           <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'TEXTAREA prompt-textarea'" sap:VirtualizedContainerService.HintSize="458,189" sap2010:WorkflowViewState.IdRef="NClick_42" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1e8b10d0-983a-406f-8d54-94c220fb71f9" Version="V3">
                                             <uix:NClick.Target>
-                                              <uix:TargetAnchorable BrowserURL="https://chatgpt.com/c/7dd9becd-49c9-4162-8865-c742cfea6225" CvTextArea="734, 974, 135, 17" CvTextArgument="Message ChatGPT" CvType="Text" DesignTimeRectangle="711, 955, 766, 52" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='prompt-textarea' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='prompt-textarea' tag='TEXTAREA' type='' class='m-0 w-full resize-none border-0 bg-transparent focus:ring-0 focus-visible:ring-0 dark:bg-transparent py-[10px] pr-10 md:py-3.5 md:pr-12 max-h-[25dvh] max-h-52 placeholder-black/50 dark:placeholder-white/50 pl-4 md:pl-6' placeholder='Message ChatGPT' aaname='' /&gt;" Guid="18b294d1-867e-45c8-b1ab-9be601c50393" InformativeScreenshot="987c228fe233871bf64e332b61865999.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ChatGPT' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
-                                                <uix:TargetAnchorable.Anchors>
-                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                                    <uix:Target CvTextArea="734, 974, 134, 17" CvTextArgument="Message ChatGPT" CvType="Text" DesignTimeRectangle="734, 974, 134, 17" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='prompt-textarea' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='prompt-textarea' tag='TEXTAREA' type='' class='m-0 w-full resize-none border-0 bg-transparent focus:ring-0 focus-visible:ring-0 dark:bg-transparent py-[10px] pr-10 md:py-3.5 md:pr-12 max-h-[25dvh] max-h-52 placeholder-black/50 dark:placeholder-white/50 pl-4 md:pl-6' placeholder='Message ChatGPT' aaname='' /&gt;" SearchSteps="FuzzySelector, CV" />
-                                                  </scg:List>
-                                                </uix:TargetAnchorable.Anchors>
-                                              </uix:TargetAnchorable>
+                                              <uix:TargetAnchorable BrowserURL="https://chatgpt.com/" CvTextArea="734, 973, 146, 19" CvTextArgument="Mensagem ChatGPT" CvType="Text" DesignTimeRectangle="711, 955, 766, 52" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='prompt-textarea' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='prompt-textarea' tag='TEXTAREA' type='' class='m-0 w-full resize-none border-0 bg-transparent focus:ring-0 focus-visible:ring-0 dark:bg-transparent py-[10px] pr-10 md:py-3.5 md:pr-12 max-h-[25dvh] max-h-52 placeholder-black/50 dark:placeholder-white/50 pl-4 md:pl-6' placeholder='Mensagem ChatGPT' aaname='' /&gt;" Guid="df99cd6c-4821-4b30-b974-d3dcd49976ea" ImageBase64="" InformativeScreenshot="b3c1296a1a80aae852575564d9dcb692.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ChatGPT' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
                                             </uix:NClick.Target>
                                           </uix:NClick>
                                           <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts 'TEXTAREA prompt-textarea'" sap:VirtualizedContainerService.HintSize="458,231" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" ScopeIdentifier="1e8b10d0-983a-406f-8d54-94c220fb71f9" Shortcuts="[d(hk)][d(ctrl)]v[u(ctrl)][u(hk)]" Version="V3">
                                             <uix:NKeyboardShortcuts.Target>
-                                              <uix:TargetAnchorable BrowserURL="https://chat.openai.com/" CvTextArea="734, 974, 142, 17" CvTextArgument="Message ChatGPT...." CvType="Text" DesignTimeRectangle="711, 955, 766, 52" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='prompt-textarea' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='prompt-textarea' tag='TEXTAREA' type='' class='m-0 w-full resize-none border-0 bg-transparent focus:ring-0 focus-visible:ring-0 dark:bg-transparent py-[10px] pr-10 md:py-3.5 md:pr-12 max-h-[25dvh] max-h-52 placeholder-black/50 dark:placeholder-white/50 pl-4 md:pl-6' placeholder='Message ChatGPT…' aaname='' /&gt;" Guid="9abaf615-85bf-4ae4-98a2-a7ec6051fb35" InformativeScreenshot="611be68ad527663c52c484e6a88a010e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ChatGPT' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                              <uix:TargetAnchorable BrowserURL="https://chatgpt.com/" CvTextArea="734, 973, 146, 19" CvTextArgument="Mensagem ChatGPT" CvType="Text" DesignTimeRectangle="711, 955, 766, 52" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='prompt-textarea' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='prompt-textarea' tag='TEXTAREA' type='' class='m-0 w-full resize-none border-0 bg-transparent focus:ring-0 focus-visible:ring-0 dark:bg-transparent py-[10px] pr-10 md:py-3.5 md:pr-12 max-h-[25dvh] max-h-52 placeholder-black/50 dark:placeholder-white/50 pl-4 md:pl-6' placeholder='Mensagem ChatGPT' aaname='' /&gt;" Guid="0d2bc05e-4a6c-4ef1-bea3-ef4166d1b422" ImageBase64="" InformativeScreenshot="b3c1296a1a80aae852575564d9dcb692.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ChatGPT' /&gt;" SearchSteps="Selector, CV" Version="V3" Visibility="Interactive" />
                                             </uix:NKeyboardShortcuts.Target>
                                           </uix:NKeyboardShortcuts>
                                           <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SVG'" sap:VirtualizedContainerService.HintSize="458,189" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1e8b10d0-983a-406f-8d54-94c220fb71f9" Version="V3">
                                             <uix:NClick.Target>
-                                              <uix:TargetAnchorable BrowserURL="https://chat.openai.com/" DesignTimeRectangle="1438, 968, 24, 24" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;span&amp;gt;svg' parentid='__next' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='__next' tag='svg' class='text-white dark:text-black' aaname='' /&gt;" Guid="c93e2648-f03e-4814-8eb1-3a6a4e5f1682" InformativeScreenshot="2f5774d038625bec05c2a0541b9fdb6c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ChatGPT' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
-                                                <uix:TargetAnchorable.Anchors>
-                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                                    <uix:Target DesignTimeRectangle="711, 795, 766, 212" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='prompt-textarea' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='prompt-textarea' tag='TEXTAREA' type='' class='m-0 w-full resize-none border-0 bg-transparent focus:ring-0 focus-visible:ring-0 dark:bg-transparent py-[10px] pr-10 md:py-3.5 md:pr-12 max-h-[25dvh] max-h-52 placeholder-black/50 dark:placeholder-white/50 pl-4 md:pl-6' placeholder='Message ChatGPT' aaname='' /&gt;" SearchSteps="FuzzySelector" />
-                                                  </scg:List>
-                                                </uix:TargetAnchorable.Anchors>
-                                              </uix:TargetAnchorable>
+                                              <uix:TargetAnchorable BrowserURL="https://chatgpt.com/" DesignTimeRectangle="1438, 970, 24, 24" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;span&amp;gt;svg' parentid='__next' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='__next' tag='svg' class='icon-lg text-white dark:text-black' aaname='' /&gt;" Guid="7e7c29f1-a034-4270-b6c6-35c4d6ab889a" ImageBase64="" InformativeScreenshot="bfbfc6ec265f30094c0dce7898cb9e5b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ChatGPT' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
                                             </uix:NClick.Target>
                                           </uix:NClick>
-                                          <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="458,465" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="30">
+                                          <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="458,683" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="30">
                                             <ui:RetryScope.ActivityBody>
                                               <ActivityAction>
-                                                <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="416,265" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                                                <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="416,476" sap2010:WorkflowViewState.IdRef="Sequence_4">
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
+                                                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="354,211" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_4" Shortcuts="[d(hk)][k(end)][u(hk)]" Version="V3" />
                                                   <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PATH'" sap:VirtualizedContainerService.HintSize="354,180" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1e8b10d0-983a-406f-8d54-94c220fb71f9" Timeout="5" Version="V3">
                                                     <uix:NClick.Target>
-                                                      <uix:TargetAnchorable BrowserURL="https://chat.openai.com/c/b69ddc09-5508-4063-89a5-41288437af88" CvElementArea="765, 885, 20, 21" CvType="Icon" DesignTimeRectangle="767, 886, 16, 19" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;button&amp;gt;svg&amp;gt;path' idx='2' parentid='__next' tag='path' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl type='' class='' parentid='__next' tag='path' aaname='' /&gt;" Guid="f829fa33-9ecc-49d8-9d77-95525b059bf6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAATCAYAAACZZ43PAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADVSURBVDhP7ZO9CoMwFEb7KsHVvxdw1dHBBxACWQR3Z3EWQXDQUQcz6/vdcj8wrUUdWrqUDoeEe7+cZMi9CSHoE74niKKI6roGYRgeZpidwHEchKWUtCwL9X1PwzBgn6Ypeq7rHguyLENwXVfQti1ZlgW6rjN1ziil9gLf99EsyxK3aK1pHEdqmgZM00TzPKNXVRWytm0/BEEQoBjHMYpJkpjDG1uPV87ymVPBFX/B7wo8z0Nx+4lXFEWBLP9eI2BeZ+GKPM/Ni4yA4Uk7uvWZ02l8D0F3NyMkaCQyY20AAAAASUVORK5CYII=" InformativeScreenshot="2ce65ec34e3164207f318cd376ecaaf0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ChatGPT' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                                      <uix:TargetAnchorable BrowserURL="https://chatgpt.com/" CvElementArea="747, 401, 22, 22" CvType="Icon" DesignTimeRectangle="750, 459, 18, 18" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl class='icon-md-heavy' parentid='__next' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl class='icon-md-heavy' parentid='__next' tag='svg' type='' aaname='' /&gt;" Guid="a7fb37a8-0a8d-4fdc-8d0e-dcae71bcaaf5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADASURBVEhL7ZTBDcQgDATTCj1QAz1QAy3QAzXQA/0RLdJGDnEgOnGPO+UxigB7MCBnM8bUb/CHYmttDSHc4r1vMX3eUOycq6WUKTnni3wojjG2RG2NQIgYVC/nh+KUUkNbkzwS4/gU8pgck14yFfNONZkEMXg05k3FWESQnNPgBhy/4mO8VMwHxhc5eHgZ87EYcay8l4IlV6GhirUKCFoYx0e7a+vkJGbfP2G0OTiJAeToKlR/R/8n07iIV/FrYlN32zg3kPm1RSIAAAAASUVORK5CYII=" InformativeScreenshot="e31de70ee00adb12c0fcceed2eb6da79.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ChatGPT' /&gt;" SearchSteps="Selector, CV" Version="V3" Visibility="Interactive">
+                                                        <uix:TargetAnchorable.Anchors>
+                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                            <uix:Target DesignTimeRectangle="750, 455, 732, 28" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='5' parentid='__next' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='mt-1 flex gap-3 empty:hidden juice:-ml-3' parentid='__next' tag='DIV' aaname='' /&gt;" SearchSteps="FuzzySelector" />
+                                                          </scg:List>
+                                                        </uix:TargetAnchorable.Anchors>
+                                                      </uix:TargetAnchorable>
                                                     </uix:NClick.Target>
                                                   </uix:NClick>
                                                 </Sequence>
@@ -871,16 +956,17 @@
                                               <ActivityFunc x:TypeArguments="x:Boolean" />
                                             </ui:RetryScope.Condition>
                                           </ui:RetryScope>
+                                          <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="458,204" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_5" Shortcuts="[d(hk)][k(f5)][u(hk)]" Version="V3" />
                                         </Sequence>
                                       </ActivityAction>
                                     </uix:NApplicationCard.Body>
                                     <uix:NApplicationCard.TargetApp>
-                                      <uix:TargetApp Area="-1928, -310, 1936, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAAdQAAAHUB48IHZQAABK5JREFUWEe9V1lTU0kU5s0/4/hL5o/4MA9ThTDO4lJqzdSU5UKNjpoAggOSsMuiiJqwyi7IEoEAYRFkRxK2bGfOd6Avfe9tUEvxVH2V9Hq+22frzvjx7M82ZBZ7zmT5cm+f83mHGTEGfSVi50q8Q4xb2f78H5z6rD8/1eec4sn3GClt8bdGionchS4bgX3lnqBhwcnA7w0oEkKAO/Hl5sknhEyf944QgM2547OO/VpNCbWND9P6Vowg8WSCwovzVPQ6QFmG+Z9AMrPEe5q/3pNjGHQhr7mBdhNxSqXTNLX8gTomQtQ3HabNnW0hM/x+mi5XF9GftT66UFFo3MOJLJ/nJo4f3m6coHDreSUlkklaiX6k241VtrHzZfk0sbQgJHSZW1uhh62NtrkucHRksC2ixkENOGZ8/V91fls/iE0eKI/yScA8tf2d1DI2RBvbW9LfMzVG2f482zoNmzgB04Agr+U5Dc1FKM0bYVPVf7mqiDon3lGazbHHxOrfdstJ6GvRfh0OCYlXoX7bmA4jgfOl+fRmekIWw+aQwrYXMobfnfiekOqZGqcrT4qtdTcaKmStagOjC7OUSCXpSvXhPB1GAt2To6K0PTxC/q5m+X8vUCdjg3wisG9OY7U1//rTMlY0J/NWY5tUcEAWuPuqVvoretusPh0uArArpDcyLm1sBtEJqM0uVD4S0yAcg+/e0uOOIIdoVOaPL76XE/mlNE/a8A+lQ4eLACbiyC5V/SdtE4GqvnYhsbW3K2OtY8OiCOO/su0bBnuFFMzXwb4CaR499CEdLgKza8s0u7pstU0EsPnix3XyND2j+4F6WthYs9pq3bWax+xHYfEVSFl3izWmw0Vgfn2VIiuLVttEAN6tvhjI9ueKKSAjnJD+ri+1rY9zDoHfmMLRRaB/ZlJiHkeJNjIgpJjTLdq6D+iAs0Y4Q+o+oSKisrdd9ijpDLrWuQgUcPaCIKGgDdawKeId0YHEcxSB0Pys/M/n/AEpbHspbRDZZn9ButbXAC4CADZKplLi1apPt2kXE9HjHeaAWRSBf148EQLq1AAQh5+otoKRABQrGZmfsdn0zssacVLUBeT6XDbR0uaGmO04AtMrS+Jfqq1gJBAIDcgGKiRxGrDpHwdVLoudTs2J7e6wh7dSKXv5UQQQ0tgDdUHpUDASgDIIyioKEOoBBAWnvKdVYhqO1jQ6aJVe3QecBFA3IP9yVlQ6FIwEfJ1NsgDOpPoeBJ/SB453SMhhFihEmDkJwFlVQeo2fD1gJHCRU+xeIiF1Hset+hERuuKrXIj6IvuOuc0FShUs+AUE1RKCOXre0GEkACDdQlDxfit/aBtDjng22CMkkW7xlSp1A8qEA5xTcHL6WieOvZAgx0NgeyipG+iS3+ju/jUMFxUUHH0NrmSICFPMm4ATOPZKhlDDHTCVTolSJTOrS667H65rCE+kXiexo5CBF4tpwAkkHlwqfi8vkMsoBNUQeQJejjQMi+/E4+wDh0XpU8jAc4n/fPFrCBEC5TAHYhzJqJnDEo5pmn8U9h8m/FwyDX4PHD7N+LlkmnDSEAKKBJ5L3Jl0TjpJWAQU8FzCiwWPhs95M3wdvPQ/jkK+9Hd0g/8AAAAASUVORK5CYII=" InformativeScreenshot="1210837ef565641c5446e28c0c6b2385.jpg" Selector="&lt;html app='chrome.exe' title='ChatGPT' /&gt;" Title="ChatGPT" Url="https://chat.openai.com/" />
+                                      <uix:TargetApp Area="-1928, -8, 1936, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsSAAALEgHS3X78AAACtElEQVRYR82XwW3CQBBFaQCJAkDKHSqADuiAG0c64BhOdEAHdEABSFAAggYiOqCDjd/aX5msZ41BCuRLK8x6PfPmz9rgjhRC6BXjsxj7YvyVTsWYVyl/VEx+FOOLFS8SuT6q9BHglcklcvZIPo9f36MVAPSltY7HY1gul2E2m8Wx3W7D9Xqtzj6sPQCtRJLpdBq63W4YDAZhNBrFT74Ph8MI8oxaAdxut5iEhOv1On6XLpdLhAFkMpnEY0DbOtMKAMtJsNvtqplSgOgccCSmLYDImfP5XK321QhAgs1mEwMtFotqthTz/X4/JuKcdQWxV3CDNU1OZAFsAgbfEZaPx+M4R8UkklIIEhODdTm5APSPBFhJzznWJqNaKrObjkTMs45PW7FalMJJLgCWk4SLqDAF0DHnAaRKEgmC65lH7BvmcM5TDUDVy9ocAIFJxDmSS1TPRhSIHLCtsqoB6ALJA5BDnGOe49R6zXMto3ULCISlkgfAsAFt1VhvQbSHtIlT1QBYyAUKQu9SAB1bkUhwOGTXcBdQlOdCDYBFJLR9BUo26ymXCgBtPNbZIg6Hw68irGoASPtAARHBFNjCIaBpgdbzaQFUlI0nuQCynYGd9hYiKC7IZj2w9DuBcgDePnABCCxi7WSqV0AkN3hYsVFZmwNQPO9WbASgcugVkIH92E3FtqIcAEO3rafGFiggIpDdA4BJakMKQCEk59i20coFQLp1rO2psNT+MGmtABg45VkvZQH4HScAFaQQfCch57GWSq1kOc5YpzxlARDPe21CEtIC/dnw/h0hknI+hcqpEQBRLT0HABgBsBGtM4Do+cGatroL4Mn2GCi5JLB7tlsB8NSrGNVjNwkZVN+02TI6AbAqj9+iOQC8lL7l1ax6M/wHL6dSMcl74kOvag+K/UbLe2XGTucbnVBY94fcQl8AAAAASUVORK5CYII=" InformativeScreenshot="ce65872f9339859cdae7b0f2d41671e5.jpg" Selector="&lt;html app='chrome.exe' title='ChatGPT' /&gt;" Title="ChatGPT" Url="https://chatgpt.com/" />
                                     </uix:NApplicationCard.TargetApp>
                                   </uix:NApplicationCard>
-                                  <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[bool_Finalizar]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="1112,2012" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
+                                  <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[bool_Finalizar]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="1112,2083" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
                                     <ui:InterruptibleDoWhile.Body>
-                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1016,1866" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1016,1937" sap2010:WorkflowViewState.IdRef="Sequence_18">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -899,40 +985,73 @@
                                           </uix:NMouseScroll.SearchedElement>
                                         </uix:NMouseScroll>
                                         <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="954,122" sap2010:WorkflowViewState.IdRef="Delay_11" />
-                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Resposta'" sap:VirtualizedContainerService.HintSize="954,189" sap2010:WorkflowViewState.IdRef="NClick_29" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="25592343-510a-496d-b086-77b1fb4af485" Version="V3">
-                                          <uix:NClick.Target>
-                                            <uix:TargetAnchorable BrowserURL="https://univali.grupoa.education/plataforma/course/736756/content/6787385" DesignTimeRectangle="537, 686, 1174, 56" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl id='tiny-vue_302530832191714159159633_ifr' tag='IFRAME' /&gt;&lt;webctrl tag='HTML' /&gt;" FuzzySelectorArgument="&lt;webctrl id='tiny-vue_302530832191714159159633_ifr' tag='IFRAME' /&gt;&lt;webctrl tag='HTML' type='' class='' aaname='' check:text='@import url(&amp;apos;https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400' /&gt;" Guid="51cf44eb-fd66-4b6f-bcbc-88e8ba7576b6" InformativeScreenshot="451ec412690e9a3446de211fc974cfd3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plataforma A :: Plataforma A' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
-                                              <uix:TargetAnchorable.Anchors>
-                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                                  <uix:Target CvTextArea="535, 608, 73, 19" CvTextArgument="Resposta" CvType="Text" DesignTimeRectangle="536, 603, 1176, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl class='text-answer' parentid='6787419' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl class='text-answer' parentid='6787419' tag='P' type='' aaname='         Resposta       ' check:innerText='Resposta' /&gt;" SearchSteps="FuzzySelector, CV" />
-                                                </scg:List>
-                                              </uix:TargetAnchorable.Anchors>
-                                            </uix:TargetAnchorable>
-                                          </uix:NClick.Target>
-                                        </uix:NClick>
-                                        <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts 'Resposta'" sap:VirtualizedContainerService.HintSize="954,231" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" ScopeIdentifier="25592343-510a-496d-b086-77b1fb4af485" Shortcuts="[d(hk)][d(ctrl)]v[u(ctrl)][u(hk)]" Version="V3">
-                                          <uix:NKeyboardShortcuts.Target>
-                                            <uix:TargetAnchorable BrowserURL="https://univali.grupoa.education/plataforma/course/736696/content/6780881" DesignTimeRectangle="537, 522, 1174, 56" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl id='tiny-vue_91992895831714137379312_ifr' tag='IFRAME' /&gt;&lt;webctrl tag='HTML' /&gt;" FuzzySelectorArgument="&lt;webctrl id='tiny-vue_91992895831714137379312_ifr' tag='IFRAME' /&gt;&lt;webctrl tag='HTML' type='' class='' aaname='' check:text='@import url(&amp;apos;https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400' /&gt;" Guid="20d319e0-7c33-4dff-9432-d39fe3f6a246" InformativeScreenshot="a26bd9db981190311d79e31d2a1aa31e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plataforma A :: Plataforma A' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
-                                              <uix:TargetAnchorable.Anchors>
-                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                                  <uix:Target CvTextArea="535, 444, 73, 19" CvTextArgument="Resposta" CvType="Text" DesignTimeRectangle="536, 439, 1176, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl class='text-answer' parentid='6780998' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl class='text-answer' parentid='6780998' tag='P' type='' aaname='         Resposta       ' check:innerText='Resposta' /&gt;" SearchSteps="FuzzySelector, CV" />
-                                                </scg:List>
-                                              </uix:TargetAnchorable.Anchors>
-                                            </uix:TargetAnchorable>
-                                          </uix:NKeyboardShortcuts.Target>
-                                        </uix:NKeyboardShortcuts>
-                                        <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="954,269" sap2010:WorkflowViewState.IdRef="NMouseScroll_12" InteractionMode="HardwareEvents" MovementUnits="10" Version="V3">
-                                          <uix:NMouseScroll.SearchedElement>
-                                            <uix:SearchedElement>
-                                              <uix:SearchedElement.Target>
-                                                <uix:TargetAnchorable BrowserURL="https://univali.grupoa.education/plataforma/course/736756/content/6787391" CvTextArea="1356, 896, 102, 17" CvTextArgument="Enviar resposta" CvType="Text" DesignTimeRectangle="1149, 896, 537, 18" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl aaname='           Enviar resposta            ' class='v-btn__content' parentid='6787464' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='           Enviar resposta            ' class='v-btn__content' parentid='6787464' tag='SPAN' type='' check:innerText='Enviar resposta' /&gt;" Guid="159e401d-974c-4924-b153-b93c01d8c3a8" InformativeScreenshot="dce6bfdd88ef3afe25f51dfb4153c2ba.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plataforma A :: Plataforma A' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
-                                              </uix:SearchedElement.Target>
-                                              <uix:SearchedElement.Timeout>
-                                                <InArgument x:TypeArguments="x:Double" />
-                                              </uix:SearchedElement.Timeout>
-                                            </uix:SearchedElement>
-                                          </uix:NMouseScroll.SearchedElement>
-                                        </uix:NMouseScroll>
+                                        <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="954,703" sap2010:WorkflowViewState.IdRef="RetryScope_2">
+                                          <ui:RetryScope.ActivityBody>
+                                            <ActivityAction>
+                                              <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="416,496" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Resposta'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NClick_29" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="25592343-510a-496d-b086-77b1fb4af485" Version="V3">
+                                                  <uix:NClick.Target>
+                                                    <uix:TargetAnchorable BrowserURL="https://univali.grupoa.education/plataforma/course/736756/content/6787385" DesignTimeRectangle="537, 686, 1174, 56" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl id='tiny-vue_302530832191714159159633_ifr' tag='IFRAME' /&gt;&lt;webctrl tag='HTML' /&gt;" FuzzySelectorArgument="&lt;webctrl id='tiny-vue_302530832191714159159633_ifr' tag='IFRAME' /&gt;&lt;webctrl tag='HTML' type='' class='' aaname='' check:text='@import url(&amp;apos;https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400' /&gt;" Guid="51cf44eb-fd66-4b6f-bcbc-88e8ba7576b6" InformativeScreenshot="451ec412690e9a3446de211fc974cfd3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plataforma A :: Plataforma A' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                                                      <uix:TargetAnchorable.Anchors>
+                                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                          <uix:Target CvTextArea="535, 608, 73, 19" CvTextArgument="Resposta" CvType="Text" DesignTimeRectangle="536, 603, 1176, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl class='text-answer' parentid='6787419' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl class='text-answer' parentid='6787419' tag='P' type='' aaname='         Resposta       ' check:innerText='Resposta' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                                        </scg:List>
+                                                      </uix:TargetAnchorable.Anchors>
+                                                    </uix:TargetAnchorable>
+                                                  </uix:NClick.Target>
+                                                </uix:NClick>
+                                                <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts 'Resposta'" sap:VirtualizedContainerService.HintSize="354,222" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" ScopeIdentifier="25592343-510a-496d-b086-77b1fb4af485" Shortcuts="[d(hk)][d(ctrl)]v[u(ctrl)][u(hk)]" Version="V3">
+                                                  <uix:NKeyboardShortcuts.Target>
+                                                    <uix:TargetAnchorable BrowserURL="https://univali.grupoa.education/plataforma/course/736696/content/6780881" DesignTimeRectangle="537, 522, 1174, 56" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl id='tiny-vue_91992895831714137379312_ifr' tag='IFRAME' /&gt;&lt;webctrl tag='HTML' /&gt;" FuzzySelectorArgument="&lt;webctrl id='tiny-vue_91992895831714137379312_ifr' tag='IFRAME' /&gt;&lt;webctrl tag='HTML' type='' class='' aaname='' check:text='@import url(&amp;apos;https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400' /&gt;" Guid="20d319e0-7c33-4dff-9432-d39fe3f6a246" InformativeScreenshot="a26bd9db981190311d79e31d2a1aa31e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plataforma A :: Plataforma A' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                                                      <uix:TargetAnchorable.Anchors>
+                                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                          <uix:Target CvTextArea="535, 444, 73, 19" CvTextArgument="Resposta" CvType="Text" DesignTimeRectangle="536, 439, 1176, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl class='text-answer' parentid='6780998' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl class='text-answer' parentid='6780998' tag='P' type='' aaname='         Resposta       ' check:innerText='Resposta' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                                        </scg:List>
+                                                      </uix:TargetAnchorable.Anchors>
+                                                    </uix:TargetAnchorable>
+                                                  </uix:NKeyboardShortcuts.Target>
+                                                </uix:NKeyboardShortcuts>
+                                              </Sequence>
+                                            </ActivityAction>
+                                          </ui:RetryScope.ActivityBody>
+                                          <ui:RetryScope.Condition>
+                                            <ActivityFunc x:TypeArguments="x:Boolean" />
+                                          </ui:RetryScope.Condition>
+                                        </ui:RetryScope>
+                                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="954,57" sap2010:WorkflowViewState.IdRef="CommentOut_16">
+                                          <ui:CommentOut.Body>
+                                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,345" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="354,260" sap2010:WorkflowViewState.IdRef="NMouseScroll_12" InteractionMode="HardwareEvents" MovementUnits="10" Version="V3">
+                                                <uix:NMouseScroll.SearchedElement>
+                                                  <uix:SearchedElement>
+                                                    <uix:SearchedElement.Target>
+                                                      <uix:TargetAnchorable BrowserURL="https://univali.grupoa.education/plataforma/course/736756/content/6787391" CvTextArea="1356, 896, 102, 17" CvTextArgument="Enviar resposta" CvType="Text" DesignTimeRectangle="1149, 896, 537, 18" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl aaname='           Enviar resposta            ' class='v-btn__content' parentid='6787464' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='           Enviar resposta            ' class='v-btn__content' parentid='6787464' tag='SPAN' type='' check:innerText='Enviar resposta' /&gt;" Guid="159e401d-974c-4924-b153-b93c01d8c3a8" InformativeScreenshot="dce6bfdd88ef3afe25f51dfb4153c2ba.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plataforma A :: Plataforma A' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                                    </uix:SearchedElement.Target>
+                                                    <uix:SearchedElement.Timeout>
+                                                      <InArgument x:TypeArguments="x:Double" />
+                                                    </uix:SearchedElement.Timeout>
+                                                  </uix:SearchedElement>
+                                                </uix:NMouseScroll.SearchedElement>
+                                              </uix:NMouseScroll>
+                                            </Sequence>
+                                          </ui:CommentOut.Body>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </ui:CommentOut>
                                         <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Enviar resposta'" sap:VirtualizedContainerService.HintSize="954,189" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="25592343-510a-496d-b086-77b1fb4af485" Version="V3">
                                           <uix:NClick.Target>
                                             <uix:TargetAnchorable BrowserURL="https://univali.grupoa.education/plataforma/course/736696/content/6780881" CvTextArea="1356, 898, 102, 17" CvTextArgument="Enviar resposta" CvType="Text" DesignTimeRectangle="1129, 876, 577, 64" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='           Enviar resposta            ' parentid='6780998' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='           Enviar resposta            ' parentid='6780998' tag='BUTTON' type='button' class='v-btn v-btn--is-elevated v-btn--has-bg theme--dark v-size--default' check:innerText='Enviar resposta' /&gt;" Guid="e2311e4e-1db2-4514-aab6-1712223a9458" InformativeScreenshot="6a120478c7f4353318d92e753babfdcd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plataforma A :: Plataforma A' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
@@ -994,7 +1113,13 @@
                                   </ui:InterruptibleDoWhile>
                                   <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'I'" sap:VirtualizedContainerService.HintSize="1112,189" sap2010:WorkflowViewState.IdRef="NClick_24" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="25592343-510a-496d-b086-77b1fb4af485" Version="V3">
                                     <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="https://univali.grupoa.education/plataforma/course/736696/content/6780882" CvElementArea="41, 217, 28, 27" CvType="ArrowButton" DesignTimeRectangle="44, 219, 24, 24" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='I' type='' class='v-icon notranslate mdi mdi-arrow-left theme--light' aaname='' /&gt;" Guid="c6b39ecc-6c15-42ab-b1e0-d96a94edd161" InformativeScreenshot="de5a4649fcac4a48a52c589922a5da84.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plataforma A :: Plataforma A' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                      <uix:TargetAnchorable BrowserURL="https://univali.grupoa.education/plataforma/course/736696/content/6780882" CvElementArea="41, 217, 28, 27" CvType="ArrowButton" DesignTimeRectangle="40, 206, 22, 22" DesignTimeScaleFactor="0.8999999761581421" FullSelectorArgument="&lt;webctrl tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='I' type='' class='v-icon notranslate mdi mdi-arrow-left theme--light' aaname='' /&gt;" Guid="c6b39ecc-6c15-42ab-b1e0-d96a94edd161" InformativeScreenshot="d1592f872ba69c45f6c554a484c46b84.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plataforma A :: Plataforma A' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                            <uix:Target CvTextArea="113, 225, 68, 14" CvTextArgument="UNIVALI" CvType="Text" DesignTimeRectangle="84, 193, 1692, 48" FullSelectorArgument="&lt;webctrl class='v-responsive__sizer' parentid='app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='v-responsive__sizer' parentid='app' tag='DIV' type='' aaname='' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
                                     </uix:NClick.Target>
                                   </uix:NClick>
                                   <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="1112,269" sap2010:WorkflowViewState.IdRef="NMouseScroll_8" InteractionMode="HardwareEvents" MovementUnits="10" Version="V3">
